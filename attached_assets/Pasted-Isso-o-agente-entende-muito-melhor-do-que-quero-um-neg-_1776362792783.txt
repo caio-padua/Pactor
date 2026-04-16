@@ -1,0 +1,263 @@
+Isso o agente entende muito melhor do que “quero um negócio tipo vídeo explicando”.
+
+10. Botões espelhados, fontes espelhadas, banners e janelas pip
+
+Aqui vale organizar o conceito:
+
+Botões espelhados
+Se o senhor quer dizer “mesma ação em pontos diferentes da tela”, chame de:
+
+* CTA duplicado
+* botão persistente
+* ação primária fixa
+* ação contextual repetida
+
+Fontes espelhadas
+Se o senhor quer consistência tipográfica em todo o sistema, chame de:
+
+* escala tipográfica
+* typography system
+* text styles
+* heading/body/caption tokens
+
+Banners durante o preenchimento
+Os nomes técnicos mais úteis são:
+
+* contextual banner
+* sticky info panel
+* assistant panel
+* inline educational card
+* side help panel
+
+Janela PiP
+Se for vídeo pequeno flutuando, pesquise:
+
+* Picture-in-Picture
+* floating video help
+* persistent tutorial window
+* document picture-in-picture
+
+Elemento grudado enquanto rola a página
+Procure por position: sticky, que é o padrão CSS para manter um bloco visível até certo limite.  
+
+11. Como extrair a “arquitetura semântica” de um site premium
+
+Isso aqui é ouro.
+
+Arquitetura semântica não é o CSS bonito.
+É o raciocínio do site.
+
+O senhor vai olhar cada referência e responder:
+
+1. Qual é a promessa principal da tela?
+2. Qual é a ordem do raciocínio visual?
+3. Qual ação a tela quer provocar?
+4. Onde ela reduz ansiedade?
+5. Onde ela reforça confiança?
+6. Como ela distribui informação em camadas?
+7. Qual parte é decoração e qual parte é funcional?
+
+Exemplo aplicado ao seu caso:
+
+Tela de anamnese premium
+
+* promessa: “você vai preencher com facilidade”
+* redução de ansiedade: barra de progresso + texto curto + etapas pequenas
+* aumento de confiança: linguagem clara + suporte visual + aparência limpa
+* funcionalidade: campos bem agrupados
+* camada extra: vídeo de ajuda, banner contextual, resumo parcial
+
+Quando o senhor faz isso em 5 referências, já consegue criar uma tela melhor do que qualquer uma delas isoladamente.
+
+12. O fluxo certo para o seu projeto da clínica
+
+Para o sistema que o senhor está construindo agora, eu seguiria esta sequência:
+
+Etapa 1 — mapa do produto
+
+Definir os módulos:
+
+* login
+* dashboard principal
+* agenda
+* anamnese
+* cadastro
+* financeiro
+* funil terapêutico
+* relatórios
+* vídeos de ajuda
+* configurações
+
+Etapa 2 — biblioteca de referências por módulo
+
+Separar uma pasta para cada módulo com:
+
+* prints
+* links
+* observações
+* o que aproveitar
+* o que evitar
+
+Etapa 3 — Design DNA Pack
+
+Criar um arquivo mestre com:
+
+* identidade
+* componentes
+* padrões UX
+* regras de conteúdo
+* comportamento responsivo
+
+Etapa 4 — protótipo conceitual
+
+Pedir para Lovable ou Replit gerar:
+
+* sitemap
+* wireframes
+* design system
+* layout base
+
+Etapa 5 — implementação por componente
+
+Nunca pedir “faz o sistema inteiro bonito”.
+Pedir:
+
+* header
+* sidebar
+* card de KPI
+* gráfico
+* timeline
+* modal de vídeo
+* step form
+* sticky panel
+* tabela
+* calendário
+
+Etapa 6 — refinamento
+
+Usar Canvas/Visual Editor do Replit para ajustar visualmente e depois consolidar em código.  
+
+13. Como usar DevTools sem ser programador
+
+Seu objetivo não é programar manualmente; é investigar.
+
+Abra um site de referência e faça:
+
+1. botão direito → Inspecionar
+2. veja o bloco HTML da seção
+3. veja classes e estrutura
+4. veja CSS aplicado
+5. vá em Network para identificar imagens, fontes, vídeos e chamadas
+6. tire prints e anote o padrão
+7. descreva em português o que a seção faz
+
+Chrome DevTools e MDN deixam claro que essas ferramentas servem exatamente para inspecionar elementos, estilos e recursos carregados.  
+
+O senhor não precisa entender tudo.
+Precisa aprender a perguntar:
+
+* esse bloco é um card ou um grid?
+* esse menu é drawer ou modal?
+* esse banner é sticky ou fixed?
+* essa ajuda é tooltip ou side panel?
+* isso é tabela, accordion ou tabs?
+
+14. Seu vocabulário técnico mínimo
+
+Para conversar com agentes de IA, use estes termos:
+
+* hero section
+* feature cards
+* KPI cards
+* analytics dashboard
+* timeline
+* stepper
+* multi-step form
+* modal
+* dialog
+* drawer
+* sticky panel
+* tooltip
+* accordion
+* tabbed interface
+* responsive sidebar
+* onboarding flow
+* guided tutorial
+* contextual banner
+* embedded video
+* picture-in-picture
+* design system
+* component library
+* typography scale
+* spacing tokens
+* semantic color tokens
+
+Com isso, o senhor já sobe muito o nível do que o Lovable e o Replit entendem.
+
+15. Modelo TDAH/TOC-friendly para o senhor executar sem travar
+
+Use sempre este bloco de trabalho:
+
+Bloco 1 — escolher módulo
+
+Exemplo: anamnese
+
+Bloco 2 — escolher 3 referências
+
+1 premium visual
+1 UX real
+1 dashboard funcional
+
+Bloco 3 — decompor
+
+* layout
+* componentes
+* comportamento
+* conteúdo
+* diferencial
+
+Bloco 4 — empacotar
+
+Transformar em especificação
+
+Bloco 5 — pedir ao agente
+
+Solicitar 1 componente por vez
+
+Bloco 6 — revisar
+
+Ver se:
+
+* ficou claro
+* ficou leve
+* ficou médico-tech
+* ficou responsivo
+* ficou reutilizável
+
+16. Minha recomendação objetiva para o seu cenário agora
+
+Para o seu projeto atual, eu faria assim:
+
+Referência visual: Awwwards + Lapa Ninja
+Referência de UX real: Mobbin + Refero
+Construção por IA: Lovable
+Refino visual e iteração de interface: Replit Canvas / Visual Editor
+Investigação técnica de referências: Chrome DevTools
+Exploração do ecossistema Google: Antigravity + Stitch  
+
+17. O que eu faria no seu lugar, hoje
+
+Eu começaria pelo módulo ANAMNESE COM AJUDA CONTEXTUAL e fecharia este pacote:
+
+1. referência de 3 telas
+2. design DNA
+3. lista de componentes
+4. prompt mestre do módulo
+5. prompt do modal de vídeo
+6. prompt do banner contextual
+7. prompt do resumo parcial
+8. prompt do progresso por etapas
+
+A partir daí, o senhor reaproveita a mesma lógica para agenda, dashboard, cadastro e relatórios.
+
+Se o senhor quiser, no próximo passo eu posso montar para o seu sistema um pacote pronto de especificação do módulo de anamnese da clínica, já em formato de prompt profissional para colar no Lovable e no Replit.
