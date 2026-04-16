@@ -4,6 +4,18 @@
 
 pnpm workspace monorepo using TypeScript. Each package manages its own dependencies.
 
+## Artifacts
+- `artifacts/api-server` (kind=api) — shared Express API, port 8080.
+- `artifacts/mockup-sandbox` (kind=design) — Vite component preview, port 8081, BASE_PATH=/__mockup.
+- `artifacts/padcom` (kind=web) — **PADCOM Anamnese SaaS V15**. React + Vite frontend, mocked data, no backend yet. previewPath `/padcom`, port 5173, BASE_PATH=/padcom.
+
+### PADCOM
+- Clinical SaaS for digital anamnesis: 5-module questionnaire (34 questions), 0–100 score, 4 conduct bands, motor mapping (exames, fórmula sempre, IM/EV/implantes), commercial funnel.
+- Data foundation in `src/data/{questionnaire,scoring,mockPatients}.ts`. Compute helpers: `computeScore`, `bandFor`, `motorActions` from `scoring.ts`.
+- Patient flow (`/`, `/anamnese`, `/anamnese/concluido`) is mobile-first, autosaves to `localStorage` key `padcom:draft`.
+- Admin (`/admin`, `/admin/p/:id`, `/admin/dashboard`) is desktop-dense: queue with funnel chips, patient detail with motor actions and validation CTA, dashboard with band distribution + funnel via Recharts.
+- Designed for later integration with the Integrative-Health-Engine Replit project; today fully independent with mocks.
+
 ## Stack
 
 - **Monorepo tool**: pnpm workspaces
