@@ -30,6 +30,11 @@ export function useDraft() {
   };
 
   const setAllAnswers = (next: AnswerMap) => {
+    try {
+      localStorage.setItem(DRAFT_KEY, JSON.stringify(next));
+    } catch {
+      // ignore storage errors
+    }
     setAnswers(next);
   };
 
