@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "II-QsRiYPyg1gm8W6Qisz"
+uri = "file://attached_assets/PADCOM_BRIEFING.md"
+type = "text"
+title = "PADCOM — Briefing técnico completo (V15)"
