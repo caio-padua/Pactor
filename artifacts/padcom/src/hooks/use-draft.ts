@@ -29,5 +29,9 @@ export function useDraft() {
     localStorage.removeItem(DRAFT_KEY);
   };
 
-  return { answers, updateAnswer, clearDraft };
+  const setAllAnswers = (next: AnswerMap) => {
+    setAnswers(next);
+  };
+
+  return { answers, updateAnswer, clearDraft, setAllAnswers };
 }
