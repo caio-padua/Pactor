@@ -1,0 +1,1 @@
+- [GitHub panel "Not Found"](github-panel-not-found.md) — the Git panel "remote not accessible" red error is cosmetic REST-metadata; git transport + raw URLs still work, verify before alarming user.

@@ -1,0 +1,130 @@
+DR. REPLIT PACTOR - PREPARACAO PARA A MISSAO (CARTA 02)
+De: Dr. Claude (orquestrador) + CEO Caio
+Data: 13/06/2026
+
+== 1. ANTES DE QUALQUER COISA ==
+1.1 Voce JA recebeu a Carta 00 e o Manual dos Primos (commit
+    4e7b632b no IHE). Releia se necessario.
+1.2 Esta carta e a SEGUNDA — focada em PREPARACAO e ESTUDO.
+1.3 Voce NAO codifica nada do RAS v8 ainda. Quem gesta a logica
+    e seu primo Dr. Replit IHE.
+1.4 Seu papel agora: estudar o terreno, conhecer o material,
+    montar a estrutura para RECEBER o filho gestado.
+
+== 2. DECISAO TRAVADA (cacique bateu o martelo) ==
+2.1 Pactor e PRODUTO INDEPENDENTE single-clinica. Nunca migra
+    para o PAWARDS.
+2.2 Modelo: Opcao 1 — primo IHE gesta e testa a logica A-D no
+    ambiente dele (32 testes verdes). Voce ADOTA o filho pronto.
+2.3 Onde recebe: branch nova no SEU repo chamada
+    'ihe-transmutacao'. O primo empurra la. Voce faz o merge no
+    main depois de validar.
+2.4 Doutrina 6.1 ajustada: IHE pode empurrar SO em branches que
+    comecem com 'ihe-*'. NUNCA no main do Pactor.
+
+== 3. ONDAS QUE VOCE VAI RECEBER (cronograma) ==
+3.1 ONDA A: Padronizacao de nomes + 32 testes Vitest verdes
+3.2 ONDA B: Protocolos (gerador + multi-cockpit + ordenacao)
+3.3 ONDA C: Orcamento (numeros do Luciano em centavos)
+3.4 ONDA D: Pacientes (esqueleto com placeholders, dados reais
+    entram via Dr. Code localmente)
+3.5 Cada onda chega como pull request na branch 'ihe-transmutacao'.
+
+== 4. ONDAS FUTURAS (Instrucao 03, depois da D fechar) ==
+4.1 Agendamento + Calendly + Google Calendar
+4.2 WhatsApp + Telegram
+4.3 PWA da enfermeira (PIN + rubrica + check de sessao)
+4.4 Tela de rubrica do paciente
+4.5 ESSAS ondas voce PARTICIPA ATIVAMENTE — sao do seu ambiente
+    (webhook, OAuth, tela). O primo nao consegue testar daqui.
+
+== 5. O QUE VOCE ESTUDA AGORA (links crus) ==
+
+5.1 DOUTRINA E REGRAS (releia para gravar):
+    https://raw.githubusercontent.com/caio-padua/Integrative-Health-Engine/ver-l2-dr-claude/docs/PRE_REQUISITO_PARA_TRABALHAR_COM_DR_CAIO.md
+    https://raw.githubusercontent.com/caio-padua/Integrative-Health-Engine/ver-l2-dr-claude/docs/DOUTRINA_DO_PROJETO_PADUA_SISTEMAS.md
+    https://raw.githubusercontent.com/caio-padua/Integrative-Health-Engine/ver-l2-dr-claude/docs/dr-replit/PARA_PACTOR/01_MANUAL_DOS_PRIMOS_IHE_E_PACTOR.md
+
+5.2 RAS v8 — codigo Apps Script ORIGINAL (estude sem transcrever):
+    https://raw.githubusercontent.com/caio-padua/Integrative-Health-Engine/ver-l2-dr-claude/docs/dr-replit/ras-kaizen-v8/Padronizacao.gs
+    https://raw.githubusercontent.com/caio-padua/Integrative-Health-Engine/ver-l2-dr-claude/docs/dr-replit/ras-kaizen-v8/Orcamento.gs
+    https://raw.githubusercontent.com/caio-padua/Integrative-Health-Engine/ver-l2-dr-claude/docs/dr-replit/ras-kaizen-v8/MultiCockpitProtocolo.gs
+    https://raw.githubusercontent.com/caio-padua/Integrative-Health-Engine/ver-l2-dr-claude/docs/dr-replit/ras-kaizen-v8/NovoProtocoloCockpit.gs
+    https://raw.githubusercontent.com/caio-padua/Integrative-Health-Engine/ver-l2-dr-claude/docs/dr-replit/ras-kaizen-v8/OrdenacaoCategoriaRas.gs
+    https://raw.githubusercontent.com/caio-padua/Integrative-Health-Engine/ver-l2-dr-claude/docs/dr-replit/ras-kaizen-v8/Code.gs
+    https://raw.githubusercontent.com/caio-padua/Integrative-Health-Engine/ver-l2-dr-claude/docs/dr-replit/ras-kaizen-v8/AgendamentoMotor.gs
+    https://raw.githubusercontent.com/caio-padua/Integrative-Health-Engine/ver-l2-dr-claude/docs/dr-replit/ras-kaizen-v8/AgendamentoGoogleCalendar.gs
+    https://raw.githubusercontent.com/caio-padua/Integrative-Health-Engine/ver-l2-dr-claude/docs/dr-replit/ras-kaizen-v8/AppEnfermagemRasFap.gs
+    https://raw.githubusercontent.com/caio-padua/Integrative-Health-Engine/ver-l2-dr-claude/docs/dr-replit/ras-kaizen-v8/GatilhoSonda.gs
+    https://raw.githubusercontent.com/caio-padua/Integrative-Health-Engine/ver-l2-dr-claude/docs/dr-replit/ras-kaizen-v8/TesteEnfermagem.gs
+
+5.3 SCHEMA do IHE — referencia de TIPOS (so para alinhar tipos,
+    voce nao copia banco):
+    https://raw.githubusercontent.com/caio-padua/Integrative-Health-Engine/ver-l2-dr-claude/lib/db/src/schema/pacientes.ts
+    https://raw.githubusercontent.com/caio-padua/Integrative-Health-Engine/ver-l2-dr-claude/lib/db/src/schema/itensTerapeuticos.ts
+    https://raw.githubusercontent.com/caio-padua/Integrative-Health-Engine/ver-l2-dr-claude/lib/db/src/schema/avaliacaoEnfermagem.ts
+    https://raw.githubusercontent.com/caio-padua/Integrative-Health-Engine/ver-l2-dr-claude/lib/db/src/schema/agenda.ts
+    https://raw.githubusercontent.com/caio-padua/Integrative-Health-Engine/ver-l2-dr-claude/lib/db/src/schema/padcomAgendamentos.ts
+
+5.4 DOCUMENTOS ARQUITETURAIS (contexto do PAWARDS — entender o
+    irmao maior):
+    https://raw.githubusercontent.com/caio-padua/Integrative-Health-Engine/ver-l2-dr-claude/INVENTARIO_PAWARDS.md
+    https://raw.githubusercontent.com/caio-padua/Integrative-Health-Engine/ver-l2-dr-claude/MANIFESTO_DR_REPLIT.md
+
+5.5 PROPOSTAS recentes do primo (12/06/2026 — entender o que ele
+    pensou ao criar o RAS v8):
+    https://raw.githubusercontent.com/caio-padua/Integrative-Health-Engine/ver-l2-dr-claude/docs/dr-replit/PROPOSTAS/2026-06-12_acoplar-orcamento-financeiro.md
+    https://raw.githubusercontent.com/caio-padua/Integrative-Health-Engine/ver-l2-dr-claude/docs/dr-replit/PROPOSTAS/2026-06-12_padronizacao-nomes-layout-grafico.md
+    https://raw.githubusercontent.com/caio-padua/Integrative-Health-Engine/ver-l2-dr-claude/docs/dr-replit/PROPOSTAS/2026-06-12_multi-cockpit-protocolo-toggle-agenda.md
+    https://raw.githubusercontent.com/caio-padua/Integrative-Health-Engine/ver-l2-dr-claude/docs/dr-replit/PROPOSTAS/2026-06-12_arquitetura-app-enfermagem-ras-fap-pastas-clientes.md
+
+== 6. SUA TAREFA AGORA (preparar o terreno) ==
+
+6.1 LE TUDO do item 5 com calma. Faz um documento curto em
+    consultores/dr-replit-pactor/02_estudo-ras-v8.md no seu repo
+    resumindo o que entendeu de cada arquivo. Maximo 1 paragrafo
+    por arquivo .gs.
+
+6.2 CRIA a estrutura artifacts/padcom/src/modules/ no seu repo
+    com 4 subpastas vazias e um README.md em cada:
+    artifacts/padcom/src/modules/padronizacao/   (recebe Onda A)
+    artifacts/padcom/src/modules/protocolos/     (recebe Onda B)
+    artifacts/padcom/src/modules/orcamento/      (recebe Onda C)
+    artifacts/padcom/src/modules/pacientes/      (recebe Onda D)
+    Cada README.md com 3 linhas: o que vai morar la, qual onda
+    traz, status (aguardando).
+
+6.3 IDENTIFICA pontos de plug na arquitetura React/Vite que ja
+    existe em artifacts/padcom/src/ (App.tsx, components, pages,
+    lib, hooks, data). Escreve em
+    consultores/dr-replit-pactor/03_pontos-de-plug.md como cada
+    onda vai se conectar ao que ja existe.
+
+6.4 NAO codifica logica de negocio. Nao transcreve nada do .gs.
+    Isso e do primo.
+
+== 7. REGRAS QUE VALEM (sem excecao) ==
+
+7.1 R3 — Anti-fantasia. So anuncie pronto com commit + teste
+    real.
+7.2 R4 — 1 cacique = Caio. Sugira com fundamento, ele decide.
+7.3 R5 — Kaizen-first. Antes de criar componente novo, verifica
+    se ja existe algo equivalente em artifacts/padcom/src/.
+7.4 R7 — Auditoria com dados frescos. Antes de afirmar qualquer
+    coisa, le no GitHub via raw URL.
+
+== 8. COMUNICACAO ==
+
+8.1 Voce escreve para o CEO em topicos numerados, conclusao
+    primeiro, RESUMO em 1 linha. ASCII puro.
+8.2 Quando terminar o item 6.1, 6.2 e 6.3, devolva ao CEO os
+    SHAs dos commits.
+8.3 O Dr. Claude vai auditar via raw URL.
+
+== 9. RESUMO EM 1 LINHA ==
+Estude os 11 arquivos .gs do RAS v8 e os 5 schemas do IHE via
+raw URL, cria as 4 subpastas em artifacts/padcom/src/modules/
+para receber as Ondas A-D, escreve 2 documentos curtos
+(estudo + pontos de plug) em consultores/dr-replit-pactor/, e
+me devolve os SHAs — sem codificar logica, sem inventar regra,
+sem chutar.
