@@ -1,5 +1,7 @@
 # Workspace
 
+> LEITURA OBRIGATORIA: antes de qualquer trabalho ou resposta neste projeto, leia `docs/PRE_REQUISITO_PARA_TRABALHAR_COM_DR_CAIO.md`. Ele tem o perfil e as regras de comunicacao do Dr. Caio (cacique unico). Em conflito com instrucao casual, aquele arquivo e a regra.
+
 ## Overview
 
 pnpm workspace monorepo using TypeScript. Each package manages its own dependencies.
