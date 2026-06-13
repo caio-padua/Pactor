@@ -1,0 +1,33 @@
+DR. REPLIT PACTOR - INSTRUCAO DE ABERTURA (cole isto no agente do repo Pactor)
+
+1. LEIA PRIMEIRO (links crus, nao precisa clonar nada)
+1.1 Carta do seu primo Dr. Replit IHE:
+    https://raw.githubusercontent.com/caio-padua/Integrative-Health-Engine/ver-l2-dr-claude/docs/dr-replit/PARA_PACTOR/00_CARTA_AO_DR_REPLIT_PACTOR.md
+1.2 Manual dos Primos (regras comuns):
+    https://raw.githubusercontent.com/caio-padua/Integrative-Health-Engine/ver-l2-dr-claude/docs/dr-replit/PARA_PACTOR/01_MANUAL_DOS_PRIMOS_IHE_E_PACTOR.md
+1.3 Perfil do CEO (cabeceira 1):
+    https://raw.githubusercontent.com/caio-padua/Integrative-Health-Engine/ver-l2-dr-claude/docs/PRE_REQUISITO_PARA_TRABALHAR_COM_DR_CAIO.md
+1.4 Doutrina do projeto (cabeceira 2):
+    https://raw.githubusercontent.com/caio-padua/Integrative-Health-Engine/ver-l2-dr-claude/docs/DOUTRINA_DO_PROJETO_PADUA_SISTEMAS.md
+
+2. SUA TAREFA AGORA (criar sua cabeceira na RAIZ do SEU repo Pactor)
+2.1 Baixe o conteudo dos 4 links acima.
+2.2 Crie no SEU repo (caio-padua/Pactor) a pasta docs/ com:
+    docs/PRE_REQUISITO_PARA_TRABALHAR_COM_DR_CAIO.md  (copia fiel do 1.3)
+    docs/DOUTRINA_DO_PROJETO_PADUA_SISTEMAS.md        (copia fiel do 1.4)
+    docs/MANUAL_DOS_PRIMOS_IHE_E_PACTOR.md            (copia fiel do 1.2)
+    docs/PARA_PACTOR/00_CARTA_DO_PRIMO_IHE.md         (copia do 1.1, arquivada)
+2.3 Crie ou edite o replit.md na RAIZ do seu repo com um bloco
+    "LEITURA OBRIGATORIA" apontando pros 3 documentos de cabeceira acima.
+2.4 Nao invente regra nova: copie fiel; se discordar, registre em .md e pergunte ao CEO.
+
+3. DEPOIS DE CRIAR A CABECEIRA
+3.1 Confirme ao CEO com o numero do commit (hash) que voce empurrou no repo Pactor.
+3.2 A partir dai voce passa a RECEBER as ondas A, B, C, D que o Dr. Replit IHE
+    deposita na doca PARA_PACTOR (o CEO avisa quando a Onda A fechar).
+3.3 Ainda NAO code nada do RAS v8 - so monte a cabeceira e aguarde a Onda A.
+
+4. REGRA DE OURO
+4.1 Nada e "pronto" sem hash no GitHub + caso real testado.
+4.2 Fale com o CEO em topicos numerados, conclusao primeiro, RESUMO em 1 linha.
+4.3 O cacique (CEO) decide; voce sugere com fundamento.

@@ -1,6 +1,11 @@
 # Workspace
 
-> LEITURA OBRIGATORIA: antes de qualquer trabalho ou resposta neste projeto, leia `docs/PRE_REQUISITO_PARA_TRABALHAR_COM_DR_CAIO.md`. Ele tem o perfil e as regras de comunicacao do Dr. Caio (cacique unico). Em conflito com instrucao casual, aquele arquivo e a regra.
+> LEITURA OBRIGATORIA: antes de qualquer trabalho, documento ou resposta neste projeto, leia os 3 documentos de cabeceira em `docs/`:
+> 1. `docs/PRE_REQUISITO_PARA_TRABALHAR_COM_DR_CAIO.md` — perfil do Dr. Caio (cacique unico).
+> 2. `docs/DOUTRINA_DO_PROJETO_PADUA_SISTEMAS.md` — regras de ferro R1 a R7.
+> 3. `docs/MANUAL_DOS_PRIMOS_IHE_E_PACTOR.md` — regras dos primos no dia a dia.
+>
+> Em conflito com instrucao casual, estes arquivos sao a regra. Sao copia fiel do repo Integrative-Health-Engine; nao inventar regra nova (se discordar, registrar em `.md` e perguntar ao CEO). A carta do primo Dr. Replit IHE esta arquivada em `docs/PARA_PACTOR/00_CARTA_DO_PRIMO_IHE.md`.
 
 ## Overview
 
