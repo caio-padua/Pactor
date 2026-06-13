@@ -4,6 +4,12 @@
 
 pnpm workspace monorepo using TypeScript. Each package manages its own dependencies.
 
+**Product identity**: PACTOR Protocols® — Integrated Treatment Management System, developed by PADCON Platform® (Advanced Systems Architecture, Dr. Caio Pádua). PADCOM Anamnese is the current module (~15% of the larger Integrative-Health-Engine system). GitHub remote: `caio-padua/Pactor`.
+
+## Collaboration model (`consultores/`)
+
+Multi-AI workflow. `consultores/` holds review lanes: `dr-claude` (this workspace, senior programmer/implementer), `dr-replit` (Integrative-Health-Engine agent, integration/production reviewer), `dr-code` (specialist AI, clinical/content reviewer). Rule: reviewers suggest, Dr. Claude implements, Dr. Caio approves. GitHub is the bridge (push/pull). See `README.md` and `consultores/README.md`.
+
 ## Artifacts
 - `artifacts/api-server` (kind=api) — shared Express API, port 8080.
 - `artifacts/mockup-sandbox` (kind=design) — Vite component preview, port 8081, BASE_PATH=/__mockup.
