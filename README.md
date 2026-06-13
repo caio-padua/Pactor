@@ -38,6 +38,7 @@ Tem questionario progressivo de 5 modulos (34 perguntas), motor de score 0-100, 
 | Dr. Replit IHE     | agente do IHE (Replit)  | Senior de producao: banco vivo, migrations, backend. |
 | Dr. Replit Pactor  | agente deste repo       | Senior de laboratorio: prototipa com mock. |
 | Dr. Code           | Claude Code CLI (PC)    | Pleno: UI, componentes, commits nos dois repos. |
+| Dr. Manus          | Manus AI                | Engenheiro autonomo de missoes, de ponta a ponta. |
 
 ## Fluxo padrao de uma feature
 

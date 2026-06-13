@@ -22,6 +22,7 @@ Nada aqui e codigo de producao: e contexto, papeis e sugestoes.
 | Dr. Replit IHE     | agente do IHE (Replit)  | Senior de producao: banco vivo, migrations, backend, multiclinica. | Nao mexe no Pactor. |
 | Dr. Replit Pactor  | agente deste repo (eu)  | Senior de laboratorio: prototipa rapido com mock. Veto tecnico no Pactor. | Nao mexe na producao. |
 | Dr. Code           | Claude Code CLI (PC)    | Pleno: UI, componentes, commits, tarefas locais nos dois repos. | Nao decide produto. |
+| Dr. Manus          | Manus AI                | Engenheiro autonomo de missoes: executa tarefas de ponta a ponta. | Nao decide produto. |
 
 ## 3. Fluxo padrao de uma feature
 
@@ -48,5 +49,6 @@ Nada aqui e codigo de producao: e contexto, papeis e sugestoes.
 - `dr-replit-ihe/` — senior de producao.
 - `dr-replit-pactor/` — senior de laboratorio (eu).
 - `dr-code/` — pleno.
+- `dr-manus/` — engenheiro autonomo de missoes.
 
 A ponte oficial e o GitHub. Toda troca passa por push/pull.
