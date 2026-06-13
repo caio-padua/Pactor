@@ -8,7 +8,7 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 
 ## Collaboration model (`consultores/`)
 
-Multi-AI workflow. `consultores/` holds review lanes: `dr-claude` (this workspace, senior programmer/implementer), `dr-replit` (Integrative-Health-Engine agent, integration/production reviewer), `dr-code` (specialist AI, clinical/content reviewer). Rule: reviewers suggest, Dr. Claude implements, Dr. Caio approves. GitHub is the bridge (push/pull). See `README.md` and `consultores/README.md`.
+Multi-AI workflow, agents named by their platform. `consultores/` holds lanes: `dr-replit` (the agent inside Replit — THIS workspace — builder/senior programmer/implementer), `dr-claude` (the Claude app chat — technical auditor/strategist: architecture, data model, specs), `dr-code` (specialist AI like ChatGPT — clinical/content reviewer). Rule: Dr. Claude & Dr. Code suggest, Dr. Replit implements, Dr. Caio approves. Pactor is a leaner system parallel to PAWARDS (Integrative-Health-Engine, the larger production project). GitHub is the bridge (push/pull). See `README.md` and `consultores/README.md`.
 
 ## Artifacts
 - `artifacts/api-server` (kind=api) — shared Express API, port 8080.

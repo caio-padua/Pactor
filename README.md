@@ -38,13 +38,13 @@ Fluxo: ideia -> protótipo aqui -> Dr. Caio valida -> push pro GitHub -> produç
 
 ## Os braços (`consultores/`)
 
-Cada IA tem um papel definido. Detalhes em `consultores/README.md`.
+Cada IA é nomeada pela plataforma onde vive. Detalhes em `consultores/README.md`.
 
-- **Dr. Claude** — programador sênior. Implementa o código. (mesmo agente deste workspace)
-- **Dr. Replit** — revisor. Analisa e sugere a partir do contexto de produção.
-- **Dr. Code** — revisor. Analisa e sugere a partir da sua especialidade.
+- **Dr. Replit** — construtor / programador sênior. Vive dentro do Replit, implementa o código. (este workspace)
+- **Dr. Claude** — auditor técnico / estrategista. Chat do app Claude. Analisa, faz specs e sugere.
+- **Dr. Code** — revisor especialista (ChatGPT/outra). Analisa e sugere na sua área.
 
-Regra de ouro: **revisores sugerem, Dr. Claude implementa, Dr. Caio aprova.**
+Regra de ouro: **Dr. Claude e Dr. Code sugerem, Dr. Replit implementa, Dr. Caio aprova.**
 
 ## Stack
 

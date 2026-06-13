@@ -1,6 +1,7 @@
-# Sugestões do Dr. Replit
+# Notas do Dr. Replit (construtor)
 
-Coloque aqui os arquivos de análise e sugestões (um arquivo por tema).
+O Dr. Replit implementa direto no código. Use esta pasta para registrar decisões
+técnicas, pendências e o que foi entregue (um arquivo por tema).
 
 Sugestão de nome: `AAAA-MM-DD-tema.md` (ex.: `2026-06-13-integracao-banco.md`).
 
