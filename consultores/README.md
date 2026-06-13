@@ -1,38 +1,52 @@
-# Consultores — Braços de colaboração entre IAs
+# Consultores — A aldeia de IAs do PACTOR
 
-Esta pasta organiza como as diferentes inteligências artificiais colaboram no
-**PACTOR Protocols®**. Cada braço é uma "via" de revisão. Não é código de produção —
-é onde cada IA lê o contexto, registra sua análise e deixa sugestões.
+Esta pasta documenta como as inteligencias artificiais colaboram no PACTOR Protocols.
+Cada IA e nomeada pela plataforma onde vive, nao pelo modelo.
+Nada aqui e codigo de producao: e contexto, papeis e sugestoes.
 
-## Por que existe
+## 1. Os 4 ambientes da aldeia
 
-O Dr. Caio trabalha com várias IAs ao mesmo tempo, cada uma forte em algo diferente.
-Para não virar bagunça (e não gerar conflitos de código), cada IA tem o seu braço:
+| Ambiente | Proposito |
+|----------|-----------|
+| PAWARDS / Integrative-Health-Engine | Producao multi-SaaS. Banco real, motor clinico, multiclinica, monetizacao. |
+| PACTOR (este repo)                  | Laboratorio. Front-first, mock, protocolagem rapida. Operacao clinica do CEO no curto prazo. |
+| RAS KAIZEN v8 (Apps Script)         | Operacao financeira de hoje. Orcamento, financeiro, agenda do CEO em uso real. |
+| claude.ai                           | Orquestracao. Specs, arquitetura, auditoria, conteudo clinico-estrutural. |
 
-- Lê o briefing e o código real do PADCOM.
-- Escreve a análise e as sugestões **dentro do seu braço**.
-- **Não altera o código de produção diretamente.** Quem implementa é o Dr. Replit.
+## 2. Matriz de papeis (1 cacique = Caio)
 
-## Os braços
+| Papel | Quem | Faz | Nao faz |
+|-------|------|-----|---------|
+| Caio (cacique)     | Dr. Caio Padua          | Decide, valida conteudo clinico, testa como medico. | Nao programa. |
+| Dr. Claude         | claude.ai               | Orquestra, escreve specs em `/docs`, le o GitHub, audita. | Nao comita. |
+| Dr. Replit IHE     | agente do IHE (Replit)  | Senior de producao: banco vivo, migrations, backend, multiclinica. | Nao mexe no Pactor. |
+| Dr. Replit Pactor  | agente deste repo (eu)  | Senior de laboratorio: prototipa rapido com mock. Veto tecnico no Pactor. | Nao mexe na producao. |
+| Dr. Code           | Claude Code CLI (PC)    | Pleno: UI, componentes, commits, tarefas locais nos dois repos. | Nao decide produto. |
 
-| Braço | Quem | Papel |
-|-------|------|-------|
-| `dr-replit/` | Agente dentro do Replit (este workspace) | **Construtor / programador sênior.** Implementa o que é aprovado. |
-| `dr-claude/` | Chat do app Claude | Auditor técnico / estrategista: arquitetura, modelo de dados, specs. |
-| `dr-code/`   | IA especialista (ChatGPT / outra) | Revisor: olha clínica, perguntas, motor de score. |
+## 3. Fluxo padrao de uma feature
 
-## Fluxo de trabalho
+1. Caio bate o martelo de visao.
+2. Dr. Claude escreve a spec em `/docs` (numerada).
+3. Dr. Replit Pactor (eu) prototipa rapido com mock, front-first.
+4. Caio valida vendo e clicando no preview do Pactor.
+5. Aprovado: Dr. Replit IHE absorve no PAWARDS via `git pull` e adapta ao banco real.
+6. Dr. Claude audita o resultado contra a spec original.
 
-1. Dr. Caio pede para uma IA revisar um trecho específico.
-2. A IA escreve a sugestão em `consultores/<braço>/sugestoes/`.
-3. Dr. Caio traz a sugestão para o Dr. Replit.
-4. Dr. Replit implementa no código real (`artifacts/padcom/...`).
-5. Dr. Caio valida no preview e aprova.
-6. Push pro GitHub -> as outras IAs puxam a versão nova (`git pull`).
+## 4. Regras de ferro
 
-## Regras de ouro
+1. R1: spec antes de codigo. Decisao que nao virou `.md` em `/docs` nao existe.
+2. R2: DDL e esqueleto, UPSERT e sangue. (Cultura; no Pactor o dado e mock.)
+3. R3: nada de fantasia. Nao anunciar entregue sem hash no GitHub.
+4. R4: a aldeia tem 1 cacique. As IAs sugerem, Caio decide.
+5. R5: TDAH/TOC friendly no que Caio le: numerado, uma frase por linha, tabelas alinhadas, zero emoji em texto tecnico, virgula decimal PT-BR.
+6. R6: nomes semanticos completos, nunca abreviar (quantidade_gramas, nunca qtd_g).
+7. R7: so e entregue quando o codigo esta no GitHub e um caso real foi testado.
 
-1. Revisores **sugerem**; Dr. Replit **implementa**; Dr. Caio **aprova**.
-2. Ninguém altera código de produção sem o OK do Dr. Caio.
-3. O GitHub é a ponte oficial. Toda troca passa por push/pull.
-4. Uma feature por vez.
+## 5. Os braços (pastas)
+
+- `dr-claude/` — orquestrador.
+- `dr-replit-ihe/` — senior de producao.
+- `dr-replit-pactor/` — senior de laboratorio (eu).
+- `dr-code/` — pleno.
+
+A ponte oficial e o GitHub. Toda troca passa por push/pull.

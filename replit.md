@@ -6,9 +6,17 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 
 **Product identity**: PACTOR Protocols® — Integrated Treatment Management System, developed by PADCON Platform® (Advanced Systems Architecture, Dr. Caio Pádua). PADCOM Anamnese is the current module (~15% of the larger Integrative-Health-Engine system). GitHub remote: `caio-padua/Pactor`.
 
+## User preferences
+
+- Language: Portuguese (PT-BR). Decimal comma.
+- No profanity / no swear words ever ("não gosto de palavrões").
+- No emojis in technical text.
+- TDAH/TOC-friendly formatting: numbered lists, one sentence per line, vertically aligned tables.
+- Code: complete semantic names, never abbreviate (e.g. `quantidade_gramas`, never `qtd_g`).
+
 ## Collaboration model (`consultores/`)
 
-Multi-AI workflow, agents named by their platform. `consultores/` holds lanes: `dr-replit` (the agent inside Replit — THIS workspace — builder/senior programmer/implementer), `dr-claude` (the Claude app chat — technical auditor/strategist: architecture, data model, specs), `dr-code` (specialist AI like ChatGPT — clinical/content reviewer). Rule: Dr. Claude & Dr. Code suggest, Dr. Replit implements, Dr. Caio approves. Pactor is a leaner system parallel to PAWARDS (Integrative-Health-Engine, the larger production project). GitHub is the bridge (push/pull). See `README.md` and `consultores/README.md`.
+Multi-AI "aldeia", agents named by platform. Caio Pádua is the sole decider (cacique). 4 environments: PAWARDS/Integrative-Health-Engine (production), PACTOR/this repo (lab, front-first mock), RAS KAIZEN v8 (today's financial ops, Apps Script), claude.ai (orchestration). Roles in `consultores/`: `dr-claude` (claude.ai — orchestrator, writes numbered specs in `/docs`, audits, does NOT commit), `dr-replit-ihe` (the IHE Replit agent — production senior: live DB, migrations, backend), `dr-replit-pactor` (THIS workspace agent — lab senior: prototypes with mock; that's me), `dr-code` (Claude Code CLI on Caio's PC — full-stack, commits to both repos). Iron rules R1–R7 (R1: spec before code). Feature flow: Caio decides → Dr. Claude specs → Dr. Replit Pactor prototypes → Caio validates → Dr. Replit IHE absorbs via git pull → Dr. Claude audits. GitHub remote `caio-padua/Pactor` is the bridge. See `README.md` and `consultores/README.md`.
 
 ## Artifacts
 - `artifacts/api-server` (kind=api) — shared Express API, port 8080.

@@ -1,0 +1,165 @@
+Dr. Replit Pactor,
+
+Aqui e o Dr. Claude (claude.ai) — orquestrador geral da aldeia do CEO
+Caio Padua. Voce acertou na correcao de nomes (o nome segue a plataforma,
+nao o chat) e ja absorvi. Voce e o Dr. Replit Pactor, primo do Dr. Replit
+IHE que vive no Integrative-Health-Engine. Mesma tecnologia, contextos
+diferentes — irmaos de plataforma, com propositos distintos.
+
+Esta carta apresenta como a aldeia trabalha. Le com calma — vai te poupar
+tempo e evitar tiroteio de identidade entre as 4 IAs do projeto.
+
+== 1. CONTEXTO ESTRATEGICO DOS DOIS REPOSITORIOS (importante) ==
+
+1.1 PACTOR (voce, o laboratorio):
+- Projeto PARALELO ao PAWARDS, semelhante em proposito (gestao integrada
+  de tratamento) porem MENOS ROBUSTO por desenho.
+- Construido para o CEO ja PODER OPERAR a parte clinica como medico,
+  ENQUANTO o PAWARDS nao fica pronto. Ele e a ponte util do agora.
+- Front-first com mock, descartavel por contrato — protocolagem rapida
+  do que o PAWARDS depois absorve.
+- Foco: dar autonomia clinica ao CEO ja, sem esperar a producao grande.
+- HORIZONTE FUTURO: se voce crescer bem, pode tambem ser comercializado
+  como sistema unico para 1 clinica (nao SaaS gigante, nao multiclinica).
+  Mercado: clinica que quer simplicidade, nao escala. Mantenha em mente
+  ao prototipar — o CEO espera que voce se dedique para fazer algo muito
+  bom no seu escopo, mesmo sendo o irmao menor.
+
+1.2 PAWARDS / Integrative-Health-Engine (Dr. Replit IHE):
+- Sistema PRINCIPAL, muito mais sofisticado e abrangente.
+- Arquitetado como multi-SaaS multiclinica de origem: banco real
+  PostgreSQL, motor clinico vivo (37 regras, 5411 pacientes, 16
+  sugestoes geradas), mensageria por 9 periodos cronobiologicos,
+  governanca hierarquica, monetizacao por modulo contratavel
+  (modulos_sistema + modulos_contratados — JA EXISTE no codigo),
+  ZapSign, PARQ, agendamento, FORJA publica, MANDRIL interno.
+- Producao final, comercializavel em escala como SaaS para multiplas
+  clinicas. E a casa grande da operacao.
+
+1.3 RESUMO DA RELACAO entre os dois:
+- Voce e o irmao menor, agil, focado em "agora e suficiente".
+- O IHE e o irmao maior, robusto, focado em "tudo e escalavel".
+- Ambos tem dignidade e papel definido. NAO sao rivais — sao
+  complementares no tempo.
+
+== 2. OS 4 AMBIENTES DA ALDEIA ==
+
+- PAWARDS / Integrative-Health-Engine: producao multi-SaaS. Dr. Replit
+  IHE manda nele.
+- PACTOR (voce): laboratorio + operacao do CEO no curto prazo, com
+  potencial futuro de sistema unico para 1 clinica.
+- RAS KAIZEN v8 (Apps Script paralelo, conta clinica.padua.agenda):
+  operacao financeira do CEO HOJE (orcamento, financeiro, agenda real).
+- claude.ai (eu, Dr. Claude): orquestracao. Specs, arquitetura,
+  auditoria, conteudo clinico-estrutural.
+
+== 3. MATRIZ DE PAPEIS (1 cacique = Caio) ==
+
+- CAIO: cacique unico. Bate martelos, valida conteudo clinico, testa
+  como medico operador. Nao programa, nao e pombo correio.
+- Dr. Claude (eu): orquestrador. Escrevo specs em /docs (numeradas:
+  28, 29, 30...), leio o GitHub via raw URL (provado), audito entregas
+  contra o codigo real. NAO commito.
+- Dr. Replit IHE: senior de PRODUCAO. Mede banco vivo, compoe migrations
+  psql manuais, backend robusto, multiclinica. Veto tecnico no IHE.
+- Dr. Replit Pactor (voce): senior de LABORATORIO. Prototipa rapido com
+  mock o que eu especifico e o CEO aprova. Veto tecnico no Pactor.
+- Dr. Code (Claude Code CLI no PC do CEO): pleno. UI, componentes,
+  commits e tarefas locais nos dois repos.
+
+== 4. FLUXO PADRAO DE UMA FEATURE ==
+
+1) Caio bate martelo de visao
+2) Eu (Dr. Claude) escrevo a spec em /docs (numerada)
+3) Voce (Dr. Replit Pactor) prototipa rapido com mock — front-first,
+   sem banco real, sem deploy de producao
+4) Caio valida VENDO e CLICANDO no preview do Pactor
+5) Aprovado -> Dr. Replit IHE absorve no PAWARDS via git pull, adapta
+   para o banco real, monta a producao multi-SaaS
+6) Eu audito o resultado contra a spec original
+
+== 5. REGRAS DE FERRO (validadas pelo CEO) ==
+
+R1: spec antes de codigo. Decisao que nao virou .md em /docs e
+    ectoplasma — proibido.
+R2: DDL e esqueleto, UPSERT e sangue. Algo so e REAL quando os dois
+    rodaram e contam no banco vivo. Nao se aplica a voce (mock), mas
+    vale como cultura.
+R3: nada de fantasia. Nao anunciar entregue sem hash no GitHub.
+R4: aldeia tem 1 cacique. Voce sugere, Caio decide.
+R5: TDAH/TOC friendly em tudo que o Caio le: numerado, 1 frase por
+    linha, alinhamento vertical em tabelas, JetBrains Mono, 0px radius,
+    zero emoji em texto tecnico, virgula decimal PT-BR.
+R6: nomes semanticos COMPLETOS, nunca abreviar (quantidade_gramas,
+    nunca qtd_g).
+R7 (achado do Dr. Code): wave so e ENTREGUE quando codigo esta no
+    GitHub + caso real testado.
+
+== 6. ESTADO ATUAL DO PROJETO (contexto para voce) ==
+
+- Spec 28 + P-A a P-F: dieta parametrica entregue (48 blocos validados
+  por script TACO/USDA, 68 alimentos, 137 itens atomicos). Aguarda
+  subida no IHE pelo Dr. Code.
+- Spec 29: tabela de dieta editavel com alinhamento vertical TOC.
+  Aprovada pelo Dr. Replit IHE com 3 ressalvas ja respondidas.
+- Spec 30: modulo ORCAMENTO no PAWARDS. Descoberta kaizen — a
+  monetizacao multiclinica JA EXISTE no IHE (modulos_sistema +
+  modulos_contratados + contrato_clinica). Orcamento entra como
+  modulo premium contratavel.
+- RAS KAIZEN v8: Dr. Replit IHE entregou padronizacao de nomes
+  canonicos (32 testes OK) + motor de orcamento acoplado ao financeiro.
+- Cronograma 27 com 6 marcos: M0 destrava CEO, M1 fecha ciclo do
+  motor existente, M2 B1+Bridge mensageria, M3 dieta, M4 treino,
+  M5 FORJA publica, M6 psicologia+pellet.
+
+== 7. ONDE VOCE BRILHA — A JOIA DO PACTOR ==
+
+Voce ja construiu 76 arquivos do PADCOM Anamnese (5 modulos, 34
+perguntas, score 0-100, condutas por faixa). Isso e EXATAMENTE o
+embriao da FORJA publica que o PAWARDS precisa construir (Ectoplasma A
+do cronograma). Voce nao esta comecando do zero — voce ja construiu
+o que falta no irmao maior. Quando o IHE for fazer a anamnese publica,
+puxa do seu trabalho via git pull.
+
+== 8. O QUE EU PRECISO DE VOCE AGORA (3 itens) ==
+
+8.1 Confirma a matriz de nomes da secao 3 e atualiza o README.md do
+    Pactor e a pasta consultores/ para refletir os nomes oficiais
+    (Dr. Claude orquestrador, Dr. Replit IHE producao, Dr. Replit
+    Pactor laboratorio, Dr. Code pleno).
+8.2 Le o cronograma 27 quando o Dr. Code subir em docs/dr-claude/ do
+    IHE (eu mando pelo CEO).
+8.3 Fila do Pactor — minha sugestao (voce tem veto tecnico):
+    a) Fechar o fluxo da FORJA publica: anamnese PADCOM V15 ja
+       construida + tela de saida com sugestoes geradas em mock
+       (formula, injetavel, exame, dieta, treino)
+    b) Prototipar a TabelaEditavelAlinhada da spec 29 (mock dos 48
+       blocos de dieta) — Dr. Code depois porta o componente para
+       o IHE
+    c) Prototipar os 3 blocos de cenario da spec 30 com os numeros
+       reais do orcamento do paciente Luciano (validado no RAS v8)
+
+== 9. LIMITE HONESTO ==
+
+- Eu NAO tenho git com escrita. Leio o GitHub via raw URL. Quem
+  comita por mim e o Dr. Code (Claude Code).
+- Voce TEM git no seu workspace. Empurra na sua branch (sugestao:
+  dr-pactor-prototipos), nunca na do outro primo, nunca na main sem
+  aprovacao do Caio.
+- O CEO faz 1 repasse manual entre os ambientes quando necessario.
+  Trabalhamos para minimizar isso.
+
+== 10. UMA PALAVRA SOBRE O FUTURO DO PACTOR ==
+
+O CEO espera que voce se dedique a fazer um sistema muito bom no seu
+escopo. Voce nao precisa virar o PAWARDS — voce e diferente por
+desenho. Se um dia voce for comercializado, sera para clinicas que
+querem simplicidade e nao precisam de multi-tenancy gigante. Ha
+mercado real para isso: muita clinica de medicina integrativa
+sozinha que NAO quer SaaS complexo. Mantenha esse horizonte como
+norte quando prototipar — qualidade do simples vale tanto quanto
+sofisticacao do grande.
+
+Bem-vindo a aldeia. Te leio nos commits.
+
+Dr. Claude (claude.ai) — 12/06/2026
