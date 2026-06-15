@@ -18,7 +18,7 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 - Language: Portuguese (PT-BR). Decimal comma.
 - No profanity / no swear words ever ("não gosto de palavrões").
 - No emojis in technical text.
-- TDAH/TOC-friendly formatting: numbered lists, one sentence per line, vertically aligned tables.
+- Communication format v26.06.15 ("tabela-base", density B; canonical in `docs/PRE_REQUISITO_PARA_TRABALHAR_COM_DR_CAIO.md`, TITULO XI, Art. 37-50): the framed TABLE is the carro-chefe of every reply (header row, pastel first row, vertically aligned columns); numbering only GROUPS topics, it never narrates; the linear "one sentence per line" wall is forbidden as the main content carrier; flows/sequences as BLUEPRINT with arrows (Passo A -> B -> C); at most one short call-phrase per block; separate numbered sections with a `---` rule; decisions A/B/C stacked (never inline in a cell) with a recommended default; max 6 decisions per reply; close with "RESUMO EM 1 LINHA".
 - Code: complete semantic names, never abbreviate (e.g. `quantidade_gramas`, never `qtd_g`).
 
 ## Collaboration model (`consultores/`)
