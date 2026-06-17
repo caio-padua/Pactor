@@ -1,82 +1,139 @@
-# Carta do Pactor para o Dr. Replit Manager
+# Carta do Pactor para o Dr. Replit Manager (versao 2, com zelo)
 
 > Bloco ASCII puro, pronto para colar no Dr. Replit Manager (Art. 48).
-> Gerado em 16/06/2026 por Dr. Replit Pactor a pedido do CEO Dr. Caio.
+> Reescrito em 16/06/2026 por Dr. Replit Pactor a pedido do CEO Dr. Caio.
+> Foco desta versao: explicar o PORQUE de cada tela, garantir que o
+> cliente ENTENDEU, e exigir melhoria continua (Kaizen).
 
 ```
 ================================================================
-CARTA DO CEO DR. CAIO (via Dr. Replit Pactor)
+CARTA DO CEO DR. CAIO (via Dr. Replit Pactor) - VERSAO 2 (ZELO)
 PARA: Dr. Replit Manager (produto Padcon Conect)
-ASSUNTO: liberacao da logistica de anamnese do PADCOM para clonar
+ASSUNTO: clonar a anamnese do PADCOM e MELHORAR pela filosofia Kaizen
 DATA: 16/06/2026
 ================================================================
 
 CONCLUSAO PRIMEIRO:
-Voce esta autorizado a clonar a experiencia de anamnese do sistema
-PADCOM (repositorio caio-padua/Pactor) e adaptar ao Padcon Conect,
-SEM quebrar o seu sistema. Leve o desenho, a linha do tempo, o salto
-por bloco, as bordas e o video de ajuda nas questoes.
+Voce esta autorizado a clonar a jornada de anamnese do PADCOM
+(repositorio caio-padua/Pactor) e adaptar ao Padcon Conect, SEM
+quebrar o seu sistema. Mas o pedido do CEO nao e so copiar: e
+entender o PORQUE de cada tela e MELHORAR a cada ciclo (Kaizen).
 
-O QUE VOCE PODE LEVAR (e onde esta no repo caio-padua/Pactor, main):
+A FILOSOFIA QUE GUIA TUDO (leia antes de codar):
+O cliente PRECISA ENTENDER. Cada tela existe para reduzir confusao
+e garantir que a pessoa compreendeu a pergunta antes de responder.
+Uma resposta dada sem entender e um dado errado que estraga a
+analise inteira. Entao a regra mae e: clareza acima de velocidade.
 
-1. Fluxo paginado com linha do tempo
+PORQUE DE CADA TELA (a logica que voce deve preservar):
+
+1. TELA DE ABERTURA (landing)
+   - arquivo: artifacts/padcom/src/pages/patient/landing.tsx
+   - o que mostra: "cerca de 6 minutos", "5 modulos", "100 por
+     cento confidencial".
+   - PORQUE existe: tirar o medo do formulario longo. Quem sabe
+     quanto tempo leva e que os dados sao sigilosos responde com
+     calma e honestidade. Confianca primeiro, perguntas depois.
+
+2. LINHA DO TEMPO E UM BLOCO POR TELA (fluxo)
    - arquivo: artifacts/padcom/src/pages/patient/flow.tsx
-   - o que faz: mostra "Etapa X de 5" mais uma barra de progresso
-     fixa no topo (a linhazinha do tempo que o cliente acompanha);
-     cada bloco cabe em uma tela; o botao "Continuar" leva ao
-     proximo bloco; rola para o topo a cada troca; barra de acao
-     fixa embaixo com botoes de cantos redondos.
+   - o que mostra: "Etapa X de 5" e uma barra de progresso fixa no
+     topo; cada bloco cabe em uma unica tela; botao "Continuar".
+   - PORQUE existe: a pessoa SEMPRE sabe onde esta e quanto falta;
+     isso evita a sensacao de formulario sem fim. Um bloco por tela
+     evita sobrecarga: poucos campos de cada vez, a pessoa foca,
+     entende e avanca. Pensado para quem se distrai com facilidade.
 
-2. Microtextos de transicao e divisao em blocos
+3. OS 5 BLOCOS E O TEXTO DE PASSAGEM (questionnaire)
    - arquivo: artifacts/padcom/src/data/questionnaire.ts
-   - o que faz: STEP_TITLES, STEP_TRANSITIONS e questionsForStep()
-     definem o titulo do bloco, o texto de passagem entre blocos e
-     quais perguntas entram em cada tela.
+   - cada bloco abre com uma frase que explica o PORQUE de seguir:
+     Bloco 1 - "Dados e clinico basico":
+       "Vamos comecar pelo basico. E rapido e ja nos da uma visao
+        inicial muito boa."
+     Bloco 2 - "Sintomas funcionais":
+       "Agora vamos aprofundar alguns sintomas que ajudam a deixar
+        sua analise mais precisa."
+     Bloco 3 - "Rotina, cirurgias e performance":
+       "Estamos entendendo melhor sua rotina, recuperacao e
+        performance."
+     Bloco 4 - "Preferencias terapeuticas":
+       "Nesta etapa, vamos identificar formatos terapeuticos que
+        podem tornar sua estrategia mais eficiente."
+     Bloco 5 - "Horizonte e investimento":
+       "Ultima etapa. Com ela, o sistema consegue organizar o
+        formato de plano mais adequado para voce."
+   - PORQUE existe: o texto de passagem diz para a pessoa POR QUE
+     aquele bloco importa. Ela nao responde no escuro; entende o
+     sentido de cada etapa e segue motivada.
 
-3. Video de ajuda nas duvidas das questoes
+4. AJUDA NA DUVIDA COM VIDEO (HelpModal)
    - arquivo: artifacts/padcom/src/components/HelpModal.tsx
-   - o que faz: o link "Ver explicacao" abre um quadro com area de
-     video (botao de play), termo tecnico, orientacao e o trecho
-     "Por que perguntamos?". Hoje o video e um espaco reservado;
-     basta plugar a URL do seu proprio video.
+   - o que mostra: o link "Ver explicacao" abre um quadro com area
+     de video (botao de play), o termo tecnico em palavras simples,
+     uma orientacao e o trecho "Por que perguntamos?".
+   - PORQUE existe: ESTE e o coracao do pedido do CEO. Quando a
+     pessoa nao entende um termo, em vez de chutar ou desistir, ela
+     ve a explicacao com video e linguagem simples. Garante que ela
+     ENTENDEU antes de responder. Hoje o video e um espaco
+     reservado; voce pluga a URL do seu proprio video.
 
-4. Campo de pergunta
+5. CAMPO DE PERGUNTA (QuestionField)
    - arquivo: artifacts/padcom/src/components/QuestionField.tsx
-   - o que faz: desenha cada pergunta e chama o HelpModal.
+   - PORQUE existe: desenha cada pergunta com seu texto de apoio e
+     chama o HelpModal; mantem cada pergunta limpa e com a ajuda
+     sempre a um toque de distancia.
 
-5. Molduras, bordas e layout
+6. TELA DE CONCLUSAO (summary)
+   - arquivo: artifacts/padcom/src/pages/patient/summary.tsx
+   - o que mostra: um numero (score) que sobe animado, o perfil de
+     conduta, a rota sugerida e o botao "Ver minhas respostas".
+   - PORQUE existe: fecha o ciclo. A pessoa ve que o que respondeu
+     virou algo concreto e pode reler todas as respostas. Isso gera
+     transparencia e confianca no resultado.
+
+MOLDURAS, BORDAS E ESTILO (o acabamento):
    - arquivos: artifacts/padcom/src/components/layouts.tsx
               artifacts/padcom/src/index.css
-   - o que faz: cartoes, cantos arredondados, cabecalho e rodape
-     fixos com desfoque (backdrop blur), bordas e sombras suaves;
-     os tokens de cor e de borda ficam no index.css.
+   - cartoes, cantos arredondados, cabecalho e rodape fixos com
+     leve desfoque, bordas e sombras suaves; as cores e bordas
+     ficam no index.css. PORQUE: visual calmo e limpo ajuda a
+     pessoa a focar no conteudo, nao na tela.
 
 COMO ACESSAR:
-- Clonar o repositorio:
-  git clone https://github.com/caio-padua/Pactor.git
-- Ou ler um arquivo cru (exemplo do fluxo):
-  https://raw.githubusercontent.com/caio-padua/Pactor/main/artifacts/padcom/src/pages/patient/flow.tsx
+   - Clonar: git clone https://github.com/caio-padua/Pactor.git
+   - Ler arquivo cru (exemplo do fluxo):
+     https://raw.githubusercontent.com/caio-padua/Pactor/main/artifacts/padcom/src/pages/patient/flow.tsx
 
 REGRAS DE ADAPTACAO (nao quebrar o seu sistema):
-- No Padcon Conect a pessoa atendida chama-se CLIENTE, nunca
-  paciente: troque todo rotulo "paciente" por "cliente".
-- Leve apenas a camada de apresentacao e experiencia (telas,
-  componentes, estilos); mantenha a SUA camada de dados e as SUAS
-  rotas como ja estao.
-- Adapte os nomes dos blocos e das perguntas ao conteudo do Padcon
-  Conect; o que importa copiar e a ESTRUTURA: um bloco por tela,
-  linha do tempo no topo e video de ajuda na duvida.
-- Nao copie o painel administrativo nem os dados de exemplo (mock)
-  se nao precisar; o foco e a jornada do cliente.
-- Teste cada bloco antes de seguir; nao suba nada que quebre o app.
+   - No Padcon Conect a pessoa atendida chama-se CLIENTE, nunca
+     paciente: troque todo rotulo "paciente" por "cliente".
+   - Leve apenas a camada de apresentacao (telas, componentes,
+     estilos); mantenha a SUA camada de dados e as SUAS rotas.
+   - Adapte o conteudo dos blocos e perguntas ao Padcon Conect; o
+     que se copia e a ESTRUTURA e a LOGICA do porque, nao o texto
+     clinico do PADCOM ao pe da letra.
+   - Teste cada bloco antes de seguir; nao suba nada que quebre.
+
+A PARTE KAIZEN (melhoria continua - obrigatoria):
+   Kaizen quer dizer melhorar um pouco a cada ciclo. Voce nao deve
+   so copiar; deve deixar MELHOR que o original. Ciclo sugerido:
+   - MEDIR: em qual bloco o cliente trava, abandona ou demora.
+   - OUVIR: quais termos geram mais cliques em "Ver explicacao".
+   - MELHORAR: reescrever esses termos em palavras mais simples,
+     gravar o video que faltava, encurtar o bloco mais pesado.
+   - REPETIR: a cada versao, uma melhoria pequena e medida.
+   Toda melhoria boa que voce encontrar, mande de volta ao CEO para
+   voltar tambem ao PADCOM. A familia toda sobe junto.
 
 CONFIRME DE VOLTA AO CEO:
-(a) o que voce clonou, (b) o que adaptou de paciente para cliente,
-(c) um print da sua primeira tela ja com a linha do tempo.
+   (a) o que clonou, (b) o que adaptou de paciente para cliente,
+   (c) a primeira melhoria Kaizen que voce ja conseguiu enxergar,
+   (d) um print da primeira tela com a linha do tempo.
 
 RESUMO EM 1 LINHA:
-Clone do PADCOM a jornada de anamnese (fluxo paginado, linha do
-tempo, salto por bloco, bordas e video de ajuda), troque paciente
-por cliente e adapte ao Padcon Conect sem quebrar o seu sistema.
+   Clone a anamnese do PADCOM entendendo o PORQUE de cada tela (a
+   pessoa precisa COMPREENDER antes de responder), troque paciente
+   por cliente, adapte ao Padcon Conect sem quebrar, e melhore a
+   cada ciclo pela filosofia Kaizen.
 ================================================================
 ```
