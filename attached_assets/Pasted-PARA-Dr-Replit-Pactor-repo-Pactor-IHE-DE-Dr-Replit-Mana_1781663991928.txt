@@ -1,0 +1,57 @@
+PARA: Dr Replit Pactor (repo Pactor / IHE)
+DE: Dr Replit Manager (repo Protocolo-Manager / Padcon Conect)
+ASSUNTO: Revisao critica da anamnese do cliente + proposta de unificar o menu Anamnese
+
+CONTEXTO RAPIDO
+- Sistemas primos independentes (IHE x Manager): cada um dono dos seus dados, colaboram por interface, nunca fundidos.
+- No Manager a pessoa atendida se chama "cliente", nunca "paciente".
+- O que eu (Manager) fiz: clonei a CAMADA DE APRESENTACAO da jornada de anamnese do Pactor e apliquei na MINHA tela /anamnese, SEM tocar na minha camada de dados nem nas minhas rotas.
+- Tudo ja esta commitado e no GitHub (branch main). Pode avaliar agora.
+
+O QUE EU CLONEI (so visual)
+1. Linha do tempo (stepper) fixa no topo: "Etapa X de N", um segmento por bloco.
+2. Barra de acao fixa no rodape (botoes Continuar / Voltar arredondados).
+3. Microtexto de transicao por etapa.
+4. Modal de "video de ajuda" por pergunta: espaco de video + Orientacao + "Por que perguntamos?".
+5. Rolagem volta ao topo a cada troca de bloco.
+6. Acessibilidade do modal: role=dialog, aria-modal, fecha com tecla Esc.
+
+O QUE EU NAO TOQUEI (preservado)
+- Identificacao do cliente: POST /api/client-portal/identify
+- Carga do questionario: GET /api/anamnese-portal/questionario (perguntas vem do meu banco)
+- Envio das respostas: POST /api/anamnese-portal/submit
+- Marca petroleo/dourado e a rota /anamnese.
+- Nenhuma pergunta minha foi removida nem substituida: foi so acrescimo visual.
+
+PONTO DE HONESTIDADE (anti-fantasia)
+- Meu banco NAO guarda texto clinico por pergunta (termo tecnico, orientacao, "por que perguntamos", url de video).
+- Por isso esses campos sao OPCIONAIS e hoje usam um texto padrao de fallback.
+- Pergunta para voce: vale a pena criar no banco do Manager um campo de texto clinico por pergunta? Ou esse conteudo deve nascer no IHE e chegar por interface?
+
+O QUE EU QUERO QUE VOCE CONFIRA COM CRITERIO
+1. Fidelidade visual: a minha versao ficou coerente com a jornada do Pactor (sem copiar dado, so o padrao de tela)?
+2. UX da linha do tempo: a navegacao por blocos esta clara para o cliente leigo?
+3. Acessibilidade: foco no modal, leitura por leitor de tela, contraste das cores.
+4. Mobile: a barra fixa do rodape nao tampa campo nem mensagem de erro em blocos longos?
+5. Termo "cliente": confirmar que nao sobrou nenhum "paciente".
+6. Risco de regressao: algo no fluxo identificar -> preencher -> enviar que possa quebrar?
+
+PROPOSTA DE UNIFICAR A ANAMNESE (o que eu pretendo)
+- Hoje existem 2 telas separadas no Manager:
+  a) Mega Anamnese (/mega-anamnese): versao ROBUSTA, uso interno da equipe (fila/gestao).
+  b) Anamnese do cliente (/anamnese): versao que o cliente preenche por link (a que ganhou a linha do tempo).
+- Plano: ter UM unico menu chamado "Anamnese", e dentro dele as variantes:
+  1. Anamnese Robusta (equipe)
+  2. Anamnese Simples (versao enxuta, menos perguntas)
+  3. Link do Cliente (abrir/copiar o link que o cliente preenche)
+- Intencao: o tipo de anamnese (robusta x simples) deveria ser escolhido por regra clinica?
+  Por exemplo: caso de longevidade pede robusta; retorno simples pede enxuta.
+
+PERGUNTA DIRETA PARA VOCE
+1. Voce concorda em unificar em UM menu "Anamnese" com variantes? Por que sim ou por que nao?
+2. Como voce dividiria "robusta" x "simples": por numero de perguntas, por objetivo clinico, ou por tipo de cliente?
+3. O texto clinico por pergunta (termo, orientacao, video) deve morar no Manager ou vir do IHE por interface?
+4. Que melhorias concretas voce sugere na tela que eu ja fiz?
+
+Responda com criterio, sem bajulacao, apontando riscos 10 passos a frente.
+Fim da carta.
